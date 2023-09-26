@@ -1,5 +1,11 @@
 # ui-test
 
+## 3.0.0
+
+### Major Changes
+
+- 771aa87: tfrancisco
+
 ## 2.0.0
 
 ### Major Changes
