@@ -1,5 +1,11 @@
 # ui-test
 
+## 4.0.0
+
+### Major Changes
+
+- a1d8982: 3
+
 ## 3.0.0
 
 ### Major Changes
