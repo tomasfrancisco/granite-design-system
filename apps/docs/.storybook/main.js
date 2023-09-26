@@ -26,8 +26,8 @@ const config = {
       resolve: {
         alias: [
           {
-            find: "@tfrancisco.dev/ui",
-            replacement: resolve(__dirname, "../../../packages/ui/"),
+            find: "ui-test",
+            replacement: resolve(__dirname, "../../../packages/ui-test/"),
           },
         ],
       },
