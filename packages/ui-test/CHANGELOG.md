@@ -1,5 +1,11 @@
 # ui-test
 
+## 5.0.0
+
+### Major Changes
+
+- 6e5f98e: lib
+
 ## 4.0.0
 
 ### Major Changes
