@@ -1,8 +1,8 @@
 {
   "name": "@tfrancisco.dev/ui",
   "version": "3.0.0",
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.mjs",
   "types": "./dist/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
@@ -10,7 +10,7 @@
     "dist/**"
   ],
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
+    "build": "tsup src/index.tsx",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
     "lint": "eslint src/",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
@@ -18,13 +18,18 @@
   "devDependencies": {
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.4",
+    "esbuild-css-modules-plugin": "^3.0.2",
     "eslint-config-custom": "workspace:*",
     "react": "^18.1.0",
     "tsconfig": "workspace:*",
-    "tsup": "^5.10.1",
-    "typescript": "^5.2.2"
+    "tsup": "^5.12.9",
+    "typescript": "^5.2.2",
+    "typescript-plugin-css-modules": "^5.0.1"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "resolutions": {
+    "esbuild": "^0.18.20"
   }
 }
