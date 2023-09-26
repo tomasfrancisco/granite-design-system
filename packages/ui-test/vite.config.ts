@@ -10,7 +10,7 @@ export default defineConfig({
   plugins: [react(), libInjectCss(), dts()],
   build: {
     lib: {
-      entry: resolve(__dirname, "src/index.tsx"),
+      entry: resolve(__dirname, "lib/index.tsx"),
       formats: ["es"],
     },
     rollupOptions: {
