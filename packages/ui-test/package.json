@@ -1,6 +1,7 @@
 {
   "name": "@tfrancisco.dev/ui-test",
   "private": true,
+  "license": "MIT",
   "version": "3.0.0",
   "type": "module",
   "main": "./dist/index.js",
