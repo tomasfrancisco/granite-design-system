@@ -6,6 +6,6 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": ["@acme/docs"],
+  "ignore": ["@tfrancisco.dev/docs"],
   "baseBranch": "main"
 }
