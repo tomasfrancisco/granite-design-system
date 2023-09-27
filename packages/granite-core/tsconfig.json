@@ -21,6 +21,6 @@
     "noFallthroughCasesInSwitch": true,
   },
   "include": ["src"],
-  "exclude": ["dist", "build", "node_modules", "**/*.stories.tsx"],
+  "exclude": ["lib", "build", "node_modules", "**/*.stories.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
