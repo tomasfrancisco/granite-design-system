@@ -1,0 +1,25 @@
+@import "src/styles/globals.css";
+
+.button {
+  composes: text from "../text/text.module.css";
+  composes: size--base from "../text/text.module.css";
+  composes: weight--medium from "../text/text.module.css";
+  width: 100%;
+  border-radius: var(--border-radius);
+  background-color: var(--button--background-color);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  font-size: var(--text--font-size--base);
+  line-height: var(--text--line-height--base);
+  color: var(--button--color);
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--button--background-color--hover);
+  }
+
+  &:focus {
+    border-color: var(--button--border-color--focus);
+  }
+}
+
