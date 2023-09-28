@@ -2,7 +2,7 @@
   "$schema": "https://turbo.build/schema.json",
   "pipeline": {
     "build": {
-      "outputs": ["lib/**", "storybook-static/**"],
+      "outputs": ["dist/**", "storybook-static/**"],
       "dependsOn": ["^build"]
     },
     "test": {

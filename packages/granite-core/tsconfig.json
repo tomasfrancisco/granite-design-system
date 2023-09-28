@@ -19,8 +19,13 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
   },
   "include": ["src"],
-  "exclude": ["lib", "build", "node_modules", "**/*.stories.tsx"],
+  "exclude": ["build", "node_modules"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

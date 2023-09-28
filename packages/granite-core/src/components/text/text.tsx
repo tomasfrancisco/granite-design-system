@@ -67,9 +67,9 @@ export const Text: FC<TextProps> = ({
   ...props
 }) => {
   const commonProps: CommonProps = {
-    className: `${styles.text} ${styles[`size--${size}`]} ${
-      styles[`weight--${weight}`]
-    } ${isHeadingFont ? styles.headingFont : styles.bodyFont} ${className}`,
+    className: `${styles[`size--${size}`]} ${styles[`weight--${weight}`]} ${
+      isHeadingFont ? styles.headingFont : styles.bodyFont
+    } ${className}`,
     ...props,
   };
 
