@@ -1,3 +1,5 @@
+:root {}
+
 .size--xs {
   font-size: 14px;
   line-height: 1;
@@ -66,21 +68,21 @@
   font-weight: 400;
 }
 
-/* .weight--medium {
+.weight--medium {
   font-weight: 500;
 }
 
 .weight--semibold {
   font-weight: 600;
-} */
+}
 
 .weight--bold {
   font-weight: 700;
 }
 
-/* .weight--extrabold {
+.weight--extrabold {
   font-weight: 800;
-} */
+}
 
 .headingFont {
   font-family: var(--font-family--heading), ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;

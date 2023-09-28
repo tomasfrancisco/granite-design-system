@@ -1,0 +1,22 @@
+:root {
+  --link__color--hover: var(--primary--600);
+  --link__color: var(--primary--900);
+}
+
+.link {
+  composes: bodyFont from "../typography/text.module.css";
+  composes: size--base from "../typography/text.module.css";
+  composes: weight--semibold from "../typography/text.module.css";
+  text-decoration: none;
+  color: var(--link__color);
+  border-bottom: 1px solid transparent;
+  transition-duration: var(--common__transition-duration);
+  transition-timing-function: var(--common__transition-timing-function);
+  transition-property: border-color;
+
+  &:hover,
+  &:focus {
+    color: var(--link__color--hover);
+    border-color: var(--link__color--hover);
+  }
+}

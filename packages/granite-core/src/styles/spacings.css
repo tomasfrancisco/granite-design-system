@@ -1,0 +1,18 @@
+:root {
+  --spacing__4: 0.25rem;
+  /* 4px */
+  --spacing__8: 0.5rem;
+  /* 8px */
+  --spacing__12: 0.75rem;
+  /* 12px */
+  --spacing__16: 1rem;
+  /* 16px */
+  --spacing__20: 1.25rem;
+  /* 20px */
+  --spacing__24: 1.5rem;
+  /* 24px */
+  --spacing__28: 1.75rem;
+  /* 28px */
+  --spacing__32: 2rem;
+  /* 32px */
+}

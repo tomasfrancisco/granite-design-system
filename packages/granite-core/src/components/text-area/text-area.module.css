@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: text;
+}
+
+.label {
+  composes: bodyFont from "../typography/text.module.css";
+  composes: size--base from "../typography/text.module.css";
+  composes: weight--medium from "../typography/text.module.css";
+  position: absolute;
+  top: 1.875rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.75rem;
+  transition: transform var(--common__transition-timing-function) var(--common__transition-duration);
+  transform-origin: 0 0;
+  color: var(--base--400);
+  cursor: text;
+  pointer-events: none;
+}
+
+.required {
+  color: currentColor;
+}
+
+.textarea {
+  composes: bodyFont from "../typography/text.module.css";
+  composes: size--base from "../typography/text.module.css";
+  composes: weight--medium from "../typography/text.module.css";
+  padding-inline: 0.75rem;
+  padding-block: 1.5rem 0.5rem;
+  border: 1px solid var(--base--300);
+  border-radius: var(--common__border-radius);
+  transition: border-color var(--common__transition-timing-function) var(--common__transition-duration);
+  resize: none;
+  overflow: hidden;
+}
+
+.textarea:hover {
+  border-color: var(--base--400);
+}
+
+.textarea:focus {
+  outline-color: var(--base--500);
+}
+
+.textarea:focus+.label,
+.textarea:not(:placeholder-shown)+.label {
+  transform: translateY(-100%) scale(0.9);
+  pointer-events: all;
+}

@@ -1,0 +1,5 @@
+:root {
+  --common__border-radius: var(--spacing__4);
+  --common__transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --common__transition-duration: 150ms;
+}

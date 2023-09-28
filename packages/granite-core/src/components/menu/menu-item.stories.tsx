@@ -1,23 +1,22 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Text } from './text';
+import { MenuItem, MenuLink } from '@/index';
 
 const meta = {
-  title: 'Text',
-  component: Text,
+  title: 'Menu/MenuItem',
+  component: MenuItem,
   parameters: {
     layout: 'centered',
   },
   tags: ['autodocs'],
-} satisfies Meta<typeof Text>;
+  decorators: [(Story) => <ul>{Story()}</ul>],
+} satisfies Meta<typeof MenuItem>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-const children = 'Višić The quick brown fox jumps over the lazy dog';
-
 export const Default: Story = {
   args: {
-    children,
+    children: <MenuLink href="#">Home</MenuLink>,
   },
 };

@@ -1,0 +1,21 @@
+:root {
+  --menu-link__color: var(--primary--900);
+  --menu-link__color--hover: var(--primary--200);
+}
+
+.link {
+  composes: bodyFont from "../typography/text.module.css";
+  composes: size--base from "../typography/text.module.css";
+  composes: weight--semibold from "../typography/text.module.css";
+  padding: var(--spacing__8) var(--spacing__12);
+  background-color: transparent;
+  border-radius: var(--common__border-radius);
+  color: var(--menu-link__color);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    background-color: var(--menu-link__color--hover);
+  }
+}

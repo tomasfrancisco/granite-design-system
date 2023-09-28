@@ -1,0 +1,17 @@
+.h1 {
+  margin-block: var(--spacing__24);
+}
+
+.h2 {
+  margin-block: var(--spacing__20);
+}
+
+.h3 {
+  margin-block: var(--spacing__20);
+}
+
+.h4 {}
+
+.h5 {}
+
+.h6 {}

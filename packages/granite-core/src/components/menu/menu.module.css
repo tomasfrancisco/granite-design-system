@@ -1,0 +1,16 @@
+.horizontalMenu {
+  display: flex;
+  margin: var(--spacing__4);
+  padding: 0;
+  gap: var(--spacing__8);
+  list-style: none;
+}
+
+.verticalMenu {
+  display: flex;
+  flex-direction: column;
+  margin: var(--spacing__4);
+  padding: 0;
+  gap: var(--spacing__8);
+  list-style: none;
+}
