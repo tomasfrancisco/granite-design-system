@@ -16,7 +16,8 @@
     "preview": "vite preview",
     "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "storybook": "storybook dev -p 6006"
+    "storybook": "storybook dev -p 6006",
+    "chromatic": "npx chromatic --project-token=chpt_7f33bcf4c10a013"
   },
   "peerDependencies": {
     "classnames": "^2.3.2",
@@ -64,5 +65,7 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "@tfrancisco.dev/granite-core@0.0.1"
 }
