@@ -2,13 +2,24 @@ import { defineConfig } from 'vite';
 import { extname, relative, resolve } from 'path';
 import { fileURLToPath } from 'node:url';
 import { glob } from 'glob';
-import react from '@vitejs/plugin-react-swc';
+import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
 import { libInjectCss } from 'vite-plugin-lib-inject-css';
+import packageJson from './package.json';
+
+const makeExternalPredicate = (externals: string[]) => {
+  if (externals.length === 0) {
+    return () => false;
+  }
+  const pattern = new RegExp(`^(${externals.join('|')})($|/)`);
+  return (id: string) => pattern.test(id);
+};
 
 export default defineConfig({
   plugins: [
-    react(),
+    react({
+      exclude: [/\.stories\.(t|j)sx?$/, /node_modules/],
+    }),
     libInjectCss(),
     dts({ include: ['src'], exclude: ['src/**/*.stories.{ts,tsx}'] }),
   ],
@@ -20,12 +31,15 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     lib: {
-      name: '@tfrancisco.dev/granite-core',
-      entry: [resolve(__dirname, 'src/index.ts')],
+      name: packageJson.name,
+      entry: resolve(__dirname, 'src/index.ts'),
       formats: ['es'],
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: makeExternalPredicate([
+        ...Object.keys(packageJson.dependencies),
+        ...Object.keys(packageJson.peerDependencies),
+      ]),
       input: Object.fromEntries(
         glob
           .sync('src/**/*.{ts,tsx}', {

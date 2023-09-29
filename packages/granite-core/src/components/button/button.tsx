@@ -1,5 +1,5 @@
-import { ButtonHTMLAttributes, DetailedHTMLProps, FC } from "react";
-import styles from "./button.module.css";
+import { ButtonHTMLAttributes, DetailedHTMLProps, FC } from 'react';
+import styles from './button.module.css';
 
 type ButtonProps = DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,

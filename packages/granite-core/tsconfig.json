@@ -7,18 +7,24 @@
     "skipLibCheck": true,
 
     /* Bundler mode */
-    "moduleResolution": "bundler",
+    "outDir": "dist",
+    "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "sourceMap": true,
+    "declarationDir": "dist/types",
+    "esModuleInterop": true,
 
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
 
     "baseUrl": ".",
     "paths": {
@@ -26,6 +32,6 @@
     },
   },
   "include": ["src"],
-  "exclude": ["build", "node_modules"],
+  "exclude": ["build", "node_modules", "**/*.stories.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -6,6 +6,12 @@
   text-wrap: balance;
 } */
 
+@import './spacings.module.css';
+@import './colors.module.css';
+@import './fonts.module.css';
+@import './theme.module.css';
+@import './media-queries.module.css';
+
 html,
 body {
   margin: 0;

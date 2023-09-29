@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { MenuItem, MenuLink } from '@/index';
+import { MenuItem, MenuLink } from './';
 
 const meta = {
   title: 'Menu/MenuItem',
