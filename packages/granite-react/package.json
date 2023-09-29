@@ -1,7 +1,7 @@
 {
-  "name": "@tfrancisco.dev/granite-core",
+  "name": "@tfrancisco.dev/granite-react",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -67,5 +67,5 @@
     "access": "public"
   },
   "readme": "ERROR: No README data found!",
-  "_id": "@tfrancisco.dev/granite-core@0.0.1"
+  "_id": "@tfrancisco.dev/granite-react@0.0.0"
 }

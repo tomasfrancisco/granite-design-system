@@ -24,7 +24,7 @@ importers:
         specifier: latest
         version: 1.10.14
 
-  packages/granite-core:
+  packages/granite-react:
     dependencies:
       '@radix-ui/react-navigation-menu':
         specifier: ^1.1.4
@@ -427,14 +427,6 @@ packages:
       '@babel/helper-validator-identifier': 7.22.20
       chalk: 2.4.2
       js-tokens: 4.0.0
-    dev: true
-
-  /@babel/parser@7.22.15:
-    resolution: {integrity: sha512-RWmQ/sklUN9BvGGpCDgSubhHWfAx24XDTDObup4ffvxaYsptOg2P3KG0j+1eWKLxpkX0j0uHxmpq2Z1SP/VhxA==}
-    engines: {node: '>=6.0.0'}
-    hasBin: true
-    dependencies:
-      '@babel/types': 7.23.0
     dev: true
 
   /@babel/parser@7.23.0:
@@ -1525,15 +1517,6 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/types@7.22.15:
-    resolution: {integrity: sha512-X+NLXr0N8XXmN5ZsaQdm9U2SSC3UbIYq/doL++sueHOTisgZHoKaQtZxGuV2cUPQHMfjKEfg/g6oy7Hm6SKFtA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-string-parser': 7.22.5
-      '@babel/helper-validator-identifier': 7.22.20
-      to-fast-properties: 2.0.0
     dev: true
 
   /@babel/types@7.23.0:
@@ -3562,7 +3545,7 @@ packages:
     dependencies:
       '@babel/core': 7.23.0
       '@babel/preset-env': 7.22.20(@babel/core@7.23.0)
-      '@babel/types': 7.22.15
+      '@babel/types': 7.23.0
       '@ndelangen/get-tarball': 3.0.9
       '@storybook/codemod': 7.4.5
       '@storybook/core-common': 7.4.5
@@ -4803,7 +4786,7 @@ packages:
   /@vue/compiler-core@3.3.4:
     resolution: {integrity: sha512-cquyDNvZ6jTbf/+x+AgM2Arrp6G4Dzbb0R64jiG804HRMfRiFXWI6kqUVqZ6ZR0bQhIoQjB4+2bhNtVwndW15g==}
     dependencies:
-      '@babel/parser': 7.22.15
+      '@babel/parser': 7.23.0
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
       source-map-js: 1.0.2
@@ -8541,7 +8524,7 @@ packages:
     engines: {node: '>= 0.4'}
     dependencies:
       call-bind: 1.0.2
-      define-properties: 1.1.4
+      define-properties: 1.2.1
     dev: true
 
   /object-keys@1.1.1:
